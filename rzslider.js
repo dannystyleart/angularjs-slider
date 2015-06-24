@@ -691,8 +691,7 @@ function throttle(func, wait, options) {
      * @param {number} left
      * @returns {number}
      */
-    setLeft: function (elem, left)
-    {
+    setLeft: function (elem, left){
       var left = (left > 0) ? (left < this.maxLeft ? left : this.maxLeft) : 0;
       elem.rzsl = left;
       elem.css({left: left + 'px'});
